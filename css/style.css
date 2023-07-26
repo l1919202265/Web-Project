@@ -1,0 +1,574 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.p1 {
+  margin-top: 20px;
+}
+
+.h1 {
+  font-size: 30px;
+}
+
+.h3 {
+  font-size: 23px;
+}
+
+.h4 {
+  font-size: 20px;
+}
+
+.h5 {
+  font-size: 18px;
+}
+
+.imgShow {
+  width: 47px;
+  height: 47px;
+}
+
+.imgHidden {
+  width: 47px;
+  height: 47px;
+}
+
+body {
+  width: 1519px;
+  margin: 0 auto;
+  border: 1px solid black;
+  position: relative;
+}
+
+/* ------------------------开始----------------------- */
+header {
+  width: 100%;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+nav {
+  width: 1519px;
+  height: 60px;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  display: flex;
+  transition: 0.5s ease;
+  justify-content: space-between;
+}
+
+nav .logo {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
+  transition: 0.5s ease;
+}
+
+.indexData {
+  width: 40%;
+  height: 60px;
+  display: flex;
+  margin-right: 150px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.indexData a {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 17px;
+  padding: 0 6px;
+  transition: 0.5s ease;
+}
+
+.indexData>li:hover a {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .2);
+  color: rgba(25, 123, 254, .9);
+}
+
+header .swiper {
+  width: 100%;
+  height: 100%;
+  --swiper-theme-color: white;
+  --swiper-pagination-color: white;
+  --swiper-navigation-size: 20px;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .4);
+}
+
+/* ------------------------结束----------------------- */
+/* ------------------------开始----------------------- */
+.floatDiv {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.floatDiv .phoneTop {
+  width: 160px;
+  height: 134px;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+  background-color: white;
+  display: none;
+}
+
+.floatDiv .phoneTop ul li {
+  display: flex;
+}
+
+.floatDiv .phoneTop ul li img {
+  width: 28px;
+  height: 32px;
+}
+
+.phoneDown:hover+.phoneTop {
+  display: block;
+}
+
+.floatDiv .phoneDown {
+  width: 192px;
+  height: 49px;
+  line-height: 49px;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  cursor: pointer;
+  background: linear-gradient(135deg, #1f9ee3, #6fc);
+}
+
+.floatDiv .phoneDown img {
+  margin-right: 5px;
+}
+
+.floatDiv button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-top: auto;
+  cursor: pointer;
+}
+
+.floatDiv button img {
+  transform: rotateZ(90deg);
+}
+
+/* ------------------------开始----------------------- */
+
+/* ------------------------开始----------------------- */
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ------------------------开始----------------------- */
+.mainOne .listOne {
+  width: 80%;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainOne .listOne li {
+  text-align: center;
+}
+
+.mainOne .listOne li:nth-of-type(2n) {
+  width: 1px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.mainOne .listOne>li>img {
+  width: 47px;
+  height: 47px;
+}
+
+.imgShow {
+  transition: 1s;
+}
+
+.imgHidden {
+  display: none;
+  transition: 1s;
+}
+
+.imgHidden:hover,
+.imgShow:hover {
+  transform: translateY(-10px);
+}
+
+.listOne li p {
+  margin-top: 10px;
+}
+
+/* ------------------------开始----------------------- */
+.mainOne .itemOne {
+  width: 100%;
+  height: 450px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainOne .itemOne .itemOneLeft {
+  width: 30%;
+}
+
+.mainOne .itemOneLeft .itemOneImg {
+  width: 360px;
+  height: 360px;
+  background: url(../images/computer.3acbdcee.png) no-repeat 60px 30px;
+  background-size: 261px 281px;
+}
+
+.mainOne .itemOneLeft .itemOneImg img {
+  width: 176px;
+  height: 232px;
+  transform: translate(105px, 30px);
+  transition: 1s linear;
+}
+
+.mainOne .itemOneLeft .itemOneImg img:hover {
+  transform: translate(75px, 30px);
+}
+
+.mainOne .itemOne .itemOneRight {
+  width: 60%;
+}
+
+.mainOne .itemOne .itemOneRight ul {
+  width: 80%;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainOne .itemOneRight ul li {
+  text-align: center;
+}
+
+.mainOne .itemOneRight ul li:nth-of-type(2n) {
+  width: 1px;
+  height: 90px;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.mainOne .itemOneRight ul li p {
+  margin-top: 10px;
+}
+
+/* ------------------------开始----------------------- */
+.mainOne .two {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.mainOne .itemTwo .itemTwoLeft {
+  width: 60%;
+}
+
+.mainOne .itemTwo .itemTwoLeft ul {
+  width: 80%;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainOne .itemTwoLeft ul li {
+  text-align: center;
+}
+
+.mainOne .itemTwoLeft ul li:nth-of-type(2n) {
+  width: 1px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.mainOne .itemTwoLeft ul li p {
+  margin-top: 10px;
+}
+
+.mainOne .itemTwo .itemTwoRight {
+  width: 30%;
+}
+
+.mainOne .itemTwoRightImg {
+  width: 360px;
+  height: 260px;
+  background: url(../images/LandBg1.5a33e3f5.png) no-repeat 0px 0px;
+  background-size: 360px 260px;
+}
+
+.mainOne .itemTwoRightImg img {
+  width: 100px;
+  height: 132px;
+  transition: 1s;
+  transform: translate(215px, -20px);
+}
+
+.mainOne .itemTwoRightImg img:hover {
+  transform: translate(185px, -20px);
+}
+
+/* ------------------------开始----------------------- */
+.icons {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.icons .swiper-slide {
+  display: flex;
+  align-items: center;
+}
+
+.icons ul {
+  width: 97%;
+  height: 440px;
+  margin: 0 auto;
+  display: flex;
+  align-content: stretch;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.icons li {
+  width: 189px;
+  height: 96px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px gray;
+  list-style: none;
+  position: relative;
+}
+
+.icons li img {
+  border-radius: 10px;
+}
+
+.icons .swiperTwo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  --swiper-theme-color: white;
+  --swiper-pagination-color: white;
+  --swiper-navigation-size: 20px;
+
+}
+
+.swiperTwo .swiper-button-prev,
+.swiperTwo .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(154, 154, 154, 0.4);
+}
+
+.icons li .iconsText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  transition: 0.8s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, #1f9ee3, #1f9ee3 0, #6fc 100%, #6fc 0);
+}
+
+.icons li:hover .iconsText {
+  opacity: 1;
+}
+
+/* ------------------------开始----------------------- */
+/* ------------------------开始----------------------- */
+.Three {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Three .itemThreeLeft {
+  height: 272px;
+  border-radius: 10px;
+}
+
+.Three {
+  width: 224px;
+  height: 216px;
+  padding: 28px;
+  overflow: hidden;
+  margin-bottom: 100px;
+  display: inline-block;
+  position: relative;
+  color: white;
+  background: linear-gradient(135deg, rgba(31, 158, 227, .9), rgba(31, 158, 227, .9) 0, rgba(102, 255, 204, .9) 100%, rgba(102, 255, 204, .9) 0);
+}
+
+.itemThreeLeftText span:nth-of-type(3) {
+  width: 150px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 19px;
+  position: absolute;
+  bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.itemThreeLeftText span:nth-of-type(3) img {
+  width: 32px;
+  height: 21px;
+
+}
+
+.itemThreeLeftImg {
+  width: 416px;
+  height: 272px;
+  float: right;
+}
+
+.itemThreeRight {
+  width: 400px;
+  height: 272px;
+}
+
+.spanAnimation {
+  width: 150px;
+  height: 40px;
+  font-size: 19px;
+  line-height: 40px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.spanAnimation img {
+  width: 10px;
+  height: 18px;
+  margin-left: 10px;
+}
+
+.itemThreeRight ul {
+  height: 272px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.itemThreeRight ul li {
+  margin-top: 25px;
+}
+
+.itemThreeRight li .h4 {
+  font-size: 18px;
+}
+
+.itemThreeRight li p {
+  color: gray;
+  margin-top: 15px;
+}
+
+/* ------------------------开始----------------------- */
+
+/* ------------------------开始----------------------- */
+footer {
+  width: 100%;
+  height: 360px;
+  margin: 0 auto;
+  color: white;
+  overflow: hidden;
+  background: url(../images/icon-15.png);
+}
+
+footer ul {
+  /* margin-top: 50px; */
+  display: flex;
+  margin: 0 50px;
+  justify-content: space-evenly;
+}
+
+footer ul li {
+  margin: 25px 40px;
+}
+
+footer ul li span {
+  /* margin-top: 20px; */
+}
+
+footer ul li .spanAnimation {
+  display: flex;
+}
+
+footer ul li .spanAnimation img {
+  width: 14px;
+  height: 26px;
+  align-items: center;
+}
+
+footer ul li:nth-last-of-type(1) img {
+  width: 155px;
+  height: 155px;
+}
+
+footer hr {
+  margin-top: 30px;
+}
+
+footer .copy {
+  height: 52px;
+  margin-top: 10px;
+  text-align: center;
+}
