@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WeChat</title>
+        <link rel="icon" href="./images/header-icon.png">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="" id="linkPath">
+    </head>
+
+    <body>
+        <div class="WeChatcontainer">
+            <header>
+                <nav>
+                    <ul>
+                        <li><img src="./images/back.png" alt=""></li>
+                        <li>郑州市中心医院专家顾问</li>
+                        <li><img src="./images/more02.png" alt=""></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <ul class="messageList">
+                    <li class="friendContainer" style="display: none">
+                        <div class="wrap friend">
+                            <img src="./images/OIP-C.png" alt="">
+                            <div class="message friendMessage"></div>
+                        </div>
+                    </li>
+                    <li class="myselfContainer" style="display: none">
+                        <div class="wrap myself">
+                            <div class="message myselfMessage"></div>
+                            <img src="./images/header-icon.png" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </main>
+            <footer>
+                <div class="container">
+                    <div class="wrap">
+                        <input id="message" type="text">
+                        <a id="sendBtn" href="javascript:void(0);">发送</a>
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+    </body>
+
+</html>
+<script src="./js/main.js"></script>
